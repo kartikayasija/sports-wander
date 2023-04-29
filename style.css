@@ -482,4 +482,40 @@ hr{
 }
 /* Stadium Owner End */
 
+/* Device Start */
+.device{
+  background: #F9FAFC;
+  color: #0A2647;
+  width: 70%;
+  margin: 4% auto;
+}
+.device-heading{
+  text-align: center;
+}
+.device-heading h1{
+  font-size: 2em;
+  font-weight: normal;
+  font-weight: bolder;
+}
+
+.device-row{
+  margin: 4% 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.device-col{
+  width: 33%;
+  margin: auto;
+  text-align: center;
+}
+.device-col img{
+  transform: scale(0.7);
+}
+.device-col p{
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+/* Device End */
+
 
