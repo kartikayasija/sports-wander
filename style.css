@@ -18,7 +18,7 @@
   background-color: aqua;
   background-color: #F9FAFC;
   top: 0;
-  position: sticky;
+  /* position: sticky; */
   z-index: 1;
 }
 .nav-full{
@@ -431,10 +431,10 @@
   color: #F9FAFC;
   text-align: center;
 }
-hr{
+.owner-steps-col hr{
   height: 3px;
   background-image: linear-gradient(90deg, #F9FAFC, #F9FAFC 75%, transparent 75%, transparent 100%);
-  background-size: 40px 1px;
+  background-size: 21px 1px;
   border: none;
   position: relative;
   top: 30px;
@@ -484,10 +484,13 @@ hr{
 
 /* Device Start */
 .device{
+  position: relative;
+  top: 80px;
   background: #F9FAFC;
   color: #0A2647;
   width: 70%;
-  margin: 4% auto;
+  margin: auto;
+  /* margin-bottom: 100px; */
 }
 .device-heading{
   text-align: center;
@@ -515,7 +518,109 @@ hr{
   font-weight: 700;
   font-size: 1.2em;
 }
-
+@media(max-width:576px){
+  .device{
+    width: 90%;
+  }
+  .device-heading h1{
+    font-size: 1.2em;
+  }
+  .device-col img{
+    transform: scale(0.6);
+  }
+}
 /* Device End */
+
+/* Reach us Started */
+.reach-us {
+  background: #0A2647;
+  color: #F9FAFC;
+  padding-bottom: 4%;
+  height: 200px;
+  position: relative;
+  z-index: 1;
+}
+
+.reach-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.reach-heading {
+  position: relative;
+  bottom: 80px;
+  width: 37%;
+  font-size: 20px;
+}
+
+.reach-heading img {
+  transform: scale(0.6);
+}
+
+.reach-heading h1 {
+  font-size: 1.4em;
+}
+
+.reach-heading h4 {
+  margin: 4% 0;
+  font-weight: 300;
+}
+
+.reach-circle {
+  /* width: 400px;
+  height: 200px;
+  background: #046c5c;
+  position: absolute;
+  bottom: 150px;
+  left: -100px;
+  z-index: -1;
+  border-radius: 200px 200px 0 0;
+  overflow: hidden;
+  padding-top: 20px; */
+  width: 50%;
+  height: 25vw;
+  max-width: 400px;
+  max-height: 200px;
+  min-width: 300px;
+  min-height: 150px;
+  background-color: #0A2647;
+  border-radius: 200px 200px 0px 0px;
+  overflow: hidden;
+  position: relative;
+  top: 80px;
+  right: 80px;
+}
+.reach-phone{
+  font-size: 18px;
+  text-align: center;
+  width: 30%;
+  position: relative;
+  bottom: 20px;
+  text-decoration: underline;
+}
+
+@media(max-width:767px){
+  .reach-us {
+    height: auto;
+  }
+  .reach-heading{
+    font-size: 16px;
+    width: 100%;
+    bottom: 50px;
+  }
+  .reach-phone{
+    font-size: 17px;
+    width: 100%;
+    text-align: left;
+    line-height: 3;
+  }
+}
+/* Reach us End */
+
+
 
 
