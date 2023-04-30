@@ -374,9 +374,9 @@
 /* Stadium Owner Start */
 .owner{
   width: 100%;
-  height: 500px;
   background: #0A2647;
   /* border: 5px solid white; */
+  padding-bottom: 7%;
 }
 .owner-heading{
   display: flex;
@@ -641,13 +641,46 @@
   padding: 20px 0;
 }
 .footer-social{
-  width: 28%;
+  width: 24%;
   /* border: 5px solid green; */
+  margin: auto 3%;
+  font-size: 13px;
 }
-.footer-social img{
-  transform: scale(0.7);
+.footer-logo{
+  width: 90%;
+  margin: auto;
+  max-width: 320px;
+  /* height: 30px; */
+  /* border: 1px solid slateblue; */
 }
-
+.footer-logo img{
+  /* transform: scale(0.7); */
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.footer-logo p{
+  text-align: right;
+  font-size: 0.8em;
+  /* border: 1px solid palevioletred; */
+}
+.social-links{
+  display: flex;
+  margin: 20px auto;
+}
+.social-col{
+  width: 50%;
+  line-height: 2;
+  margin: 5px 0;
+  /* border: 1px solid palegreen; */
+}
+.social-col p{
+  text-align: left;
+}
+.social-col i{
+  margin: 3px;
+  font-size: 1.1em;
+}
 .footer-col{
   width: 50%;
   /* border: 1px solid purple; */
@@ -656,7 +689,7 @@
   display: flex;
   justify-content: center;
   font-weight: 550;
-  margin-left: 1%;
+  margin: 0 2%;
 }
 .footer-col h2{
   color: #212121;
@@ -667,15 +700,29 @@
 }
 .footer-group{
   display: flex;
-  width: 36%;
+  width: 30%;
+  /* margin: 0 2%; */
+  margin: 0 auto;
 }
 @media(max-width: 767px){
   .footer-col{
     font-size: 10px;
   }
+  .footer-col h2{
+    font-size: 1.2em;
+  }
+  .social-col p{
+    font-size: 0.9em;
+  }
+  .social-col i{
+    font-size: 1em;
+  }
 }
-
 @media(max-width: 576px){
+  .footer-social{
+    width: 88%;
+    margin: auto;
+  }
   .footer-group{
     width: 90%;
     margin: auto;
@@ -684,6 +731,9 @@
   }
   .footer-col{
     justify-content: start;
+  }
+  .footer-col ul li{
+    font-size: 1.3em;
   }
 }
 
