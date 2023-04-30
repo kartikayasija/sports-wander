@@ -10,6 +10,10 @@
   --primary: #046c5c;
   --secondary: #0f2f51;
 }
+a{
+  text-decoration: none;
+  color: inherit;
+}
 /* section{
   max-width: 1920px;
 } */
