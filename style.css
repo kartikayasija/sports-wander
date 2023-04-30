@@ -29,6 +29,7 @@
 }
 .nav-logo{
   width: 25%;
+  display: contents
 }
 .nav-logo img{
   position: relative;
@@ -42,36 +43,57 @@
 .nav-options ul{
   list-style: none;
   display: flex;
+  align-items: center;
   justify-content: space-around;
 }
 .nav-options ul li{
-  width: 200px;
+  width: 25%;
   text-align: center;
+  margin: 0 1px;
 }
 .nav-options ul li h5{
   font-weight: 600;
   font-style: normal;
 }
+.nav-options ul li i{
+  background: #B9D2FC;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 5px;
+}
 .nav-btn{
   display: none;
-  padding: 0 30px;
+  padding: 0 10px;
   justify-content: flex-end;
   position: absolute;
   top: 10px;
   right: 0px;
 }
+.nav-btn button{
+  background: transparent;
+  border: none;
+  color: #F9FAFC;
+}
 
 .nav-mob{
   display: none;
   text-align: center; 
+  color: #F9FAFC;
+  font-size: 0.8em;
 }
 .nav-mob ul li{
   margin: 15px 0;
+  font-weight: 100;
+}
+@media(max-width:2000px){
+  .nav-mob{
+    display: none;
+  }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 767px) {
   .navbar{
-    background: none;
+    background-color: #0A2647;
   }
   .nav-full{
     display: none; 
@@ -108,18 +130,20 @@
 }
 .hero-content{
   width: 50%;
-  line-height: 3.8;
+  line-height: 4;
+  margin: 100px 0;
+  font-size: 30px;
 }
 .hero-content h3{
   color: white;
   font-weight: 300;
-  /* font-size: 25px; */
-  font-size: 1.5em;
+  font-size: 1em;
+  font-size: 2vw;
 }
 .hero-content h2 {
   font-weight: 600;
-  /* font-size: 50px; */
-  font-size: 3em;
+  font-size: 2em;
+  font-size: 3.25vw;
   color: white;
   line-height: 58.5px;
 }
@@ -128,8 +152,19 @@
   text-align: center;
 }
 .hero-img img{
-  width: 70%;
+  width: 80%;
   max-width: 450px;
+}
+.hero-line{
+  line-height: 3;
+  /* text-align: right; */
+  position: relative;
+}
+.hero-line img{
+  transform: scale(0.7);
+  position: absolute;
+  left: 230px;
+  top: 45px;
 }
 
 .download-btn img{
@@ -207,13 +242,13 @@
   .imortant-insights{
     margin: 0;
   }
+  .hero-content{
+    line-height: 2;
+  }
 }
 @media(max-width: 767px){
   .hero-container{
     justify-content: center;
-  }
-  .hero-content{
-    width: 90%;
   }
   .hero-img{
     width: 90%;
@@ -224,11 +259,15 @@
     width: 40%;
   }
   .hero-content{
-    line-height: 1;
+    width: 90%;
+    line-height: 2;
     text-align: center;
   }
+  .hero-content h3{
+    font-size: 4vw;
+  }
   .hero-content h2{
-    font-size: 30px
+    font-size: 7.5vw;
   }
   .imortant-insights h2{
     font-size: 20px;
@@ -246,7 +285,6 @@
 .organizers{
   background: #0A2647;
   width: 100%;
-  /* height: 500px; */
   overflow: hidden;
 }
 .orgaizers-container{
@@ -306,11 +344,12 @@
   justify-content: center;
 }
 .organizers-card{
-  width: 170px;
+  max-width: 170px;
   height: 150px;
+  width: 18%;
   background: #F9FAFC;
   border-radius: 10px;
-  margin: 3%;
+  margin: 0 2%;
   position: relative;
 }
 .card-2{
@@ -327,9 +366,11 @@
 }
 .badge-circle{
   background: #0A2647;
-  border-radius: 9999px;
-  width: 80px;
-  height: 80px;
+  border-radius: 50%;
+  max-width: 80px;
+  max-height: 80px;
+  width: 50%;
+  height: 50%;
   position: absolute;
   right: -10px;
   top: -10px;
@@ -347,14 +388,20 @@
   color: #0A2647;
   font-size: larger;
 }
-
-@media(max-width:1045px){
+@media (max-width:1024px) {
+  .organizers-card{
+    height: 130px;
+  }
+}
+@media(max-width:767px){
   .organizers-card-container{
     flex-direction: column;
     align-items: center;
   }
   .organizers-card{
     margin-bottom: 80px;
+    width: 170px;
+    height: 150px;
   }
   .card-1{
     left: 40px;
@@ -541,7 +588,7 @@
   padding-bottom: 4%;
   height: 200px;
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 
 .reach-container {
@@ -557,7 +604,7 @@
   position: relative;
   bottom: 80px;
   width: 37%;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .reach-heading img {
@@ -598,12 +645,20 @@
   right: 80px;
 }
 .reach-phone{
-  font-size: 18px;
-  text-align: center;
+  font-size: 17px;
   width: 30%;
   position: relative;
   bottom: 20px;
-  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reach-phone hr{
+  width: 20px;
+}
+.reach-phone i{
+  margin: 5px;
+  font-size: 1.3em;
 }
 
 @media(max-width:767px){
@@ -738,5 +793,3 @@
 }
 
 /* footer end */
-
-
