@@ -91,7 +91,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 780px) {
   .navbar{
     background-color: #0A2647;
   }
@@ -156,15 +156,24 @@
   max-width: 450px;
 }
 .hero-line{
-  line-height: 3;
-  /* text-align: right; */
-  position: relative;
+  width: fit-content;
+  line-height: 0.5;
+  text-align: center;
 }
-.hero-line img{
+.hero-line-img{
+  text-align: right;
+}
+.hero-line-img img{
   transform: scale(0.7);
-  position: absolute;
-  left: 230px;
-  top: 45px;
+}
+.underline{
+  position: relative;
+  left: 80px;
+}
+.star{
+  position: relative;
+  left: 50px;
+  bottom: 10px;
 }
 
 .download-btn img{
@@ -246,7 +255,7 @@
     line-height: 2;
   }
 }
-@media(max-width: 767px){
+@media(max-width: 780px){
   .hero-container{
     justify-content: center;
   }
@@ -268,6 +277,9 @@
   }
   .hero-content h2{
     font-size: 7.5vw;
+  }
+  .hero-line{
+    margin: auto;
   }
   .imortant-insights h2{
     font-size: 20px;
@@ -393,7 +405,7 @@
     height: 130px;
   }
 }
-@media(max-width:767px){
+@media(max-width:780px){
   .organizers-card-container{
     flex-direction: column;
     align-items: center;
@@ -536,7 +548,6 @@
 .device{
   position: relative;
   top: 80px;
-  background: #F9FAFC;
   color: #0A2647;
   width: 70%;
   margin: auto;
@@ -661,7 +672,7 @@
   font-size: 1.3em;
 }
 
-@media(max-width:767px){
+@media(max-width:780px){
   .reach-us {
     height: auto;
   }
