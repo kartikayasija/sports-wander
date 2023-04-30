@@ -29,7 +29,7 @@
 }
 .nav-logo{
   width: 25%;
-  display: contents
+  display: contents;
 }
 .nav-logo img{
   position: relative;
@@ -80,6 +80,10 @@
   text-align: center; 
   color: #F9FAFC;
   font-size: 0.8em;
+  position: absolute;
+  width: 100%;
+  background: #0A2647;
+  z-index: -1;
 }
 .nav-mob ul li{
   margin: 15px 0;
